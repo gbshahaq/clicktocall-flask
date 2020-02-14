@@ -48,15 +48,9 @@ def call():
 def outbound():
     response = VoiceResponse()
 
-    response.say("Thank you for contacting our sales department. If this "
-                 "click to call application was in production, we would "
-                 "dial out to your sales team with the Dial verb.",
-                 voice='alice')
-    '''
-    # Uncomment this code and replace the number with the number you want
-    # your customers to call.
-    response.number("+16518675309")
-    '''
+    response.say('Now connecting you to LEGO consumer service. An agent will be there shortly',
+                 voice='Polly.Amy',language='en-GB')
+    response.dial('+4588915109')
     return str(response)
 
 
