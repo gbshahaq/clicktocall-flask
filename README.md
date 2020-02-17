@@ -77,3 +77,13 @@ $ make test
 * No warranty expressed or implied.  Software is as is. Diggity.
 * [MIT License](http://www.opensource.org/licenses/mit-license.html)
 * Lovingly crafted by Twilio Developer Education.
+
+PS For the Bitnami MEAN stack, slight change to getting the virtual env to run:
+
+1. cd to working directory
+2. $ python3 -m venv venv
+3. $ source venv/bin/activate
+4. $ source .env
+5. $ make run
+6. (in a new shell) $ ngrok http 5000
+
