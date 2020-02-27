@@ -81,7 +81,7 @@ $ make test
 PS For the Bitnami MEAN stack, slight change to getting the virtual env to run:
 
 1. cd to working directory
-2. $ python3 -m venv venv
+2. $ python3 -m venv venv (initial run only)
 3. $ source venv/bin/activate
 4. $ source .env
 5. $ make run
